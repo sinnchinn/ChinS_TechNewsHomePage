@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./dist/output.css">
+  <title>Frontend Mentor | News homepage</title>
+
+</head>
+
+<body>
+
+
+  <nav class="bg-white border-gray-200 dark:bg-gray-900 font-mainFont">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="./assets/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+      </a>
+      <button type="button"
+        class="inline-flex items-center py-2 ps-2 w-20 h-10 justify-center text-sm text-black rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-900 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        data-drawer-target="drawer-right-example" data-drawer-show="drawer-right-example" data-drawer-placement="right"
+        aria-controls="drawer-right-example">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-14 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 2h22M1 7h22M1 12h22" />
+        </svg>
+      </button>
+
+      <div id="drawer-right-example"
+        class="fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform translate-x-full bg-white w-80 dark:bg-gray-800"
+        tabindex="-1" aria-labelledby="drawer-right-label">
+
+        <div></div>
+        <button type="button" data-drawer-hide="drawer-right-example" aria-controls="drawer-right-example"
+          class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
+          <svg width="32" height="31" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#00001A" fill-rule="evenodd">
+              <path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z" />
+              <path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z" />
+            </g>
+          </svg>
+          </svg>
+          <span class="sr-only">Close menu</span>
+        </button>
+        <div class="mt-40">
+          <ul class="text-2xl">
+            <li>
+              <a href="#" class="block py-3 px-1 text-gray-800 font-mainFont" aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="#" class="block py-3 px-1 text-gray-800 font-mainFont">New</a>
+            </li>
+            <li>
+              <a href="#" class="block py-3 px-1 text-gray-800 font-mainFont">Popular</a>
+            </li>
+            <li>
+              <a href="#" class="block py-3 px-1 text-gray-800 font-mainFont">Trending</a>
+            </li>
+            <li>
+              <a href="#" class="block py-3 ps-1 text-gray-800 font-mainFont">Categories</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul
+          class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-500 hover:text-readMoreBtn" aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-500 hover:text-readMoreBtn">New</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-500 hover:text-readMoreBtn">Popular</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-500 hover:text-readMoreBtn">Trending</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-500 hover:text-readMoreBtn">Categories</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar end -->
+
+  <!-- desktop start -->
+  <div class="hidden lg:block">
+    <div class="grid lg:grid-cols-3 px-36 pt-10 font-mainFont">
+
+      <div class="grid lg:col-span-2 md:grid-cols-1 pr-8">
+        <img src="./assets/images/image-web-3-desktop.jpg" alt="">
+
+        <div class="grid lg:grid-cols-2 ">
+          <div>
+            <p class="grid lg:col-span-1 text-6xl font-extrabold pt-8 "> The Bright Future of Web 3.0? </p>
+          </div>
+          <div>
+            <p class="font-mainFont text-gray-500 pt-8"> We dive into the next evolution of the web that claims to put
+              the
+              power of the platforms back into the hands of the
+              people.
+              But is it really fulfilling its promise?
+            </p>
+
+            <div class="pt-12">
+              <button type="button"
+                class="text-white bg-readMoreBtn hover:bg-cardFill tracking-widest font-semibold text-sm px-7 py-3 me-2 mb-2 ">READ
+                MORE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-cardFill p-8 font-mainFont text-white">
+        <p class="text-5xl font-mainFont font-bold text-carddFont">New</p>
+        <br>
+
+        <a href="">
+          <p class="font-bold text-xl hover:text-carddFont"> Hydrogen VS Electric Cars</p>
+        </a>
+        <p class="pt-3 font-extralight leading-8">Will hydrogen-fueled cars ever catch up to EVs?</p>
+
+        <br>
+        <hr>
+        <br>
+
+        <a href="">
+          <p class="font-bold text-xl hover:text-carddFont">The Downsides of AI Artistry</p>
+        </a>
+        <p class="pt-3 font-extralight leading-8">What are the possible adverse effects of on-demand AI image
+          generation?
+        </p>
+
+        <br>
+        <hr>
+        <br>
+
+        <a href="">
+          <p class="font-bold text-xl hover:text-carddFont">Is VC Funding Drying Up?</p>
+        </a>
+        <p class="pt-3 font-extralight leading-8">Private funding by VC firms is down 50% YOY. We take a look at what
+          that
+          means.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- cards at bottom -->
+    <div class="grid lg:grid-cols-3 px-36 pt-20 mb-20">
+
+      <div>
+        <div class="flex flex-col items-center bg-white md:flex-row md:max-w-xl">
+          <img class=" w-full h-36 md:w-48 pr-4" src="./assets/images/image-retro-pcs.jpg" alt="">
+          <div class="flex flex-col justify-between p-4 leading-normal">
+            <h5 class="mb-2 font-mainFont text-4xl font-semibold tracking-tight text-gray-300 ">01</h5>
+            <a href="">
+              <p class="mb-3 font-mainFont text-xl font-extrabold text-black hover:text-readMoreBtn">Reviving Retro PCs
+              </p>
+            </a>
+            <p class="mb-3 font-mainFont font-normal text-gray-500">What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div>
+        <div class="flex flex-col items-center bg-white md:flex-row md:max-w-xl">
+          <img class=" w-full h-36 md:w-48 pr-4" src="./assets/images/image-top-laptops.jpg" alt="">
+          <div class="flex flex-col justify-between p-4 leading-normal">
+            <h5 class="mb-2 font-mainFont text-4xl font-semibold tracking-tight text-gray-300 ">02</h5>
+            <a href="">
+              <p class="mb-3 font-mainFont text-xl font-extrabold text-black hover:text-readMoreBtn">Top 10 Laptops of
+                2022</p>
+            </a>
+            <p class="mb-3 font-mainFont font-normal text-gray-500">Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="flex flex-col items-center bg-white md:flex-row md:max-w-xl">
+          <img class=" w-full h-36 md:w-48 pr-4" src="./assets/images/image-retro-pcs.jpg" alt="">
+          <div class="flex flex-col justify-between p-4 leading-normal">
+            <h5 class="mb-2 font-mainFont text-4xl font-semibold tracking-tight text-gray-300 ">03</h5>
+            <a href="">
+              <p class="mb-3 font-mainFont text-xl font-extrabold text-black hover:text-readMoreBtn">The Growth of
+                Gaming
+              </p>
+            </a>
+            <p class="mb-3 font-mainFont font-normal text-gray-500"> How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- desktop end -->
+
+  <!-- responsiveness start -->
+  <div class="block lg:hidden">
+    <div class="pt-10 font-mainFont">
+
+      <div class="px-5">
+        <div class="flex justify-center">
+          <img src="./assets/images/image-web-3-mobile.jpg" alt="">
+        </div>
+
+        <div class="px-3">
+          <div>
+            <p class="text-6xl font-extrabold pt-8 "> The Bright Future of Web 3.0? </p>
+          </div>
+          <div>
+            <p class="font-mainFont text-gray-500 pt-8"> We dive into the next evolution of the web that claims to put
+              the
+              power of the platforms back into the hands of the
+              people.
+              But is it really fulfilling its promise?
+            </p>
+
+            <div class="pt-12 mb-20">
+              <button type="button"
+                class="text-white bg-readMoreBtn hover:bg-cardFill tracking-widest font-semibold text-sm px-7 py-3 me-2 mb-2 ">READ
+                MORE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="px-5">
+      <div class="bg-cardFill p-8 font-mainFont text-white">
+        <p class="text-5xl font-mainFont font-bold text-carddFont">New</p>
+        <br>
+
+        <a href="">
+          <p class="font-bold text-xl hover:text-carddFont"> Hydrogen VS Electric Cars</p>
+        </a>
+        <p class="pt-3 font-extralight leading-8">Will hydrogen-fueled cars ever catch up to EVs?</p>
+
+        <br>
+        <hr>
+        <br>
+
+        <a href="">
+          <p class="font-bold text-xl hover:text-carddFont">The Downsides of AI Artistry</p>
+        </a>
+        <p class="pt-3 font-extralight leading-8">What are the possible adverse effects of on-demand AI image
+          generation?
+        </p>
+
+        <br>
+        <hr>
+        <br>
+
+        <a href="">
+          <p class="font-bold text-xl hover:text-carddFont">Is VC Funding Drying Up?</p>
+        </a>
+        <p class="pt-3 font-extralight leading-8">Private funding by VC firms is down 50% YOY. We take a look at what
+          that
+          means.
+        </p>
+      </div>
+    </div>
+
+    </div>
+
+    <!-- cards at bottom -->
+    <div class="col-span-3 pt-20 px-5 mb-20">
+
+      <div class="col-span-3 lg:col-span-1 lg:ps-4 mb-16 lg:mb-0 flex justify-center">
+        <a href="#" class="flex  bg-white md:flex-row md:max-w-100 sm:w-20">
+          <div class="w-32 pr-5">
+            <img class="object-cover md:ps-2 md:w-28 sm:w-10" src="./assets/images/image-retro-pcs.jpg"
+              alt="An image of a console's controller">
+          </div>
+          <div class="flex flex-col justify-start px-4 xl:px-6 leading-normal">
+            <p class="mb-2 font-mainFont text-4xl font-semibold tracking-tight text-gray-300">01</p>
+            <h4 class="mb-3 font-mainFont text-xl font-extrabold text-black">Reviving Retro PCs
+            </h4>
+            <p class="mb-3 font-mainFont font-normal text-gray-500">What happens when old PCs
+              are given modern upgrades?</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-span-3 lg:col-span-1 lg:ps-4 mb-16 lg:mb-0 flex justify-center pt-10">
+        <a href="#" class="flex  bg-white md:flex-row md:max-w-100 sm:w-20">
+          <div class="w-32 pr-5">
+            <img class="object-cover md:ps-2 md:w-28 sm:w-10" src="./assets/images/image-top-laptops.jpg"
+              alt="An image of a console's controller">
+          </div>
+          <div class="flex flex-col justify-start px-4 xl:px-6 leading-normal">
+            <p class="mb-2 font-mainFont text-4xl font-semibold tracking-tight text-gray-300">02</p>
+            <h4 class="mb-3 font-mainFont text-xl font-extrabold text-black">Top 10 Laptops of
+              2022
+            </h4>
+            <p class="mb-3 font-mainFont font-normal text-gray-500">Our best picks for various needs and budgets. <span
+                class="invisible">Our bestjjjjj</span> </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-span-3 lg:col-span-1 lg:ps-4 mb-16 lg:mb-0 flex justify-center pt-10">
+        <a href="#" class="flex  bg-white md:flex-row md:max-w-100 sm:w-20">
+          <div class="w-32 pr-5">
+            <img class="object-cover md:ps-2 md:w-28 sm:w-10" src="./assets/images/image-gaming-growth.jpg"
+              alt="An image of a console's controller">
+          </div>
+          <div class="flex flex-col justify-start px-4 xl:px-6 leading-normal">
+            <p class="mb-2 font-mainFont text-4xl font-semibold tracking-tight text-gray-300">03</p>
+            <h4 class="mb-3 font-mainFont text-xl font-extrabold text-black">The Growth of Gaming
+            </h4>
+            <p class="mb-3 font-mainFont font-normal text-gray-500">How the pandemic has sparked fresh
+              opportunities.<span class="invisible">Ouriiiii</span> </p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+
+</body>
+
+</html>
